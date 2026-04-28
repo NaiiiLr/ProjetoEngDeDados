@@ -1,0 +1,14 @@
+# Ambientes Virtuais e Cache do Python
+.venv/
+__pycache__/
+.ipynb_checkpoints/
+
+# Build do MkDocs
+site/
+
+# Bancos de Dados / Data Lakes locais
+warehouse_delta_lake/
+warehouse-apache-iceberg/
+spark-warehouse/
+*.csv
+*.parquet
