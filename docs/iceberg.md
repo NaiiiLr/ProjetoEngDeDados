@@ -77,13 +77,13 @@ spark.sql("SELECT * FROM local.db.produtos ORDER BY id_produto").show()
 Resultado esperado:
 
 ```
-+----------+--------------------+------------+-------+-------+
-|id_produto|                nome|id_categoria|  preco|estoque|
-+----------+--------------------+------------+-------+-------+
-|       104|      Smartwatch Pro|           1| 1500.0|     50|
-|       105|Teclado Mecânico RGB|           2|  450.0|    120|
-|       106|Monitor Ultrawide 34|           2| 6200.0|     25|
-+----------+--------------------+------------+-------+-------+
++----------+--------------------+------------+------+-------+
+|id_produto|                nome|id_categoria| preco|estoque|
++----------+--------------------+------------+------+-------+
+|       104|      Smartwatch Pro|           1|1500.0|     50|
+|       105|Teclado Mecânico RGB|           2| 450.0|    120|
+|       106|Monitor Ultrawide 34|           2|6200.0|     25|
++----------+--------------------+------------+------+-------+
 ```
 
 ### 3. DELETE: Exclusão Física de Registro
@@ -101,12 +101,12 @@ spark.sql("SELECT * FROM local.db.produtos ORDER BY id_produto").show()
 Resultado esperado:
 
 ```
-+----------+--------------------+------------+-------+-------+
-|id_produto|                nome|id_categoria|  preco|estoque|
-+----------+--------------------+------------+-------+-------+
-|       104|      Smartwatch Pro|           1| 1500.0|     50|
-|       106|Monitor Ultrawide 34|           2| 6200.0|     25|
-+----------+--------------------+------------+-------+-------+
++----------+--------------------+------------+------+-------+
+|id_produto|                nome|id_categoria| preco|estoque|
++----------+--------------------+------------+------+-------+
+|       104|      Smartwatch Pro|           1|1500.0|     50|
+|       106|Monitor Ultrawide 34|           2|6200.0|     25|
++----------+--------------------+------------+------+-------+
 ```
 
 ### 4. MERGE (UPSERT): Sincronização Atômica
@@ -139,11 +139,11 @@ spark.sql("SELECT * FROM local.db.produtos ORDER BY id_produto").show()
 Resultado esperado:
 
 ```
-+----------+--------------------+------------+-------+-------+
-|id_produto|                nome|id_categoria|  preco|estoque|
-+----------+--------------------+------------+-------+-------+
-|       104|   Smartwatch Pro V2|           1| 1650.0|     80|
-|       106|Monitor Ultrawide 34|           2| 6200.0|     25|
-|       107|       Mouse Sem Fio|           2|  180.0|    200|
-+----------+--------------------+------------+-------+-------+
++----------+--------------------+------------+------+-------+
+|id_produto|                nome|id_categoria| preco|estoque|
++----------+--------------------+------------+------+-------+
+|       104|   Smartwatch Pro V2|           1|1650.0|     80|
+|       106|Monitor Ultrawide...|           2|6200.0|     25|
+|       107|       Mouse Sem Fio|           2| 180.0|    200|
++----------+--------------------+------------+------+-------+
 ```
