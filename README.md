@@ -94,3 +94,11 @@ uv run mkdocs serve
 ```
 
 Em seguida, acesse `http://localhost:8000` no seu navegador para explorar a arquitetura, diagramas e detalhes conceituais do projeto.
+
+### 5. Referências
+
+- [Apache Spark - Documentação Oficial](https://spark.apache.org/docs/latest/)
+- [Delta Lake - Documentação Oficial](https://docs.delta.io/latest/index.html)
+- [Apache Iceberg - Documentação Oficial](https://iceberg.apache.org/docs/latest/)
+- [MkDocs Material - Guia do Usuário](https://squidfunk.github.io/mkdocs-material/)
+- [Astral (uv) - Python Package Manager](https://github.com/astral-sh/uv)
