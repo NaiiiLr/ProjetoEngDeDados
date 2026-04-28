@@ -609,13 +609,13 @@ print(&quot;--- DEPOIS DO UPDATE (Monitor: Preço ajustado e Estoque reduzido) -
 spark.sql(&quot;SELECT * FROM local.db.produtos ORDER BY id_produto&quot;).show()
 </code></pre>
 <p>Resultado esperado:</p>
-<pre><code>+----------+--------------------+------------+-------+-------+
-|id_produto|                nome|id_categoria|  preco|estoque|
-+----------+--------------------+------------+-------+-------+
-|       104|      Smartwatch Pro|           1| 1500.0|     50|
-|       105|Teclado Mecânico RGB|           2|  450.0|    120|
-|       106|Monitor Ultrawide 34|           2| 6200.0|     25|
-+----------+--------------------+------------+-------+-------+
+<pre><code>+----------+--------------------+------------+------+-------+
+|id_produto|                nome|id_categoria| preco|estoque|
++----------+--------------------+------------+------+-------+
+|       104|      Smartwatch Pro|           1|1500.0|     50|
+|       105|Teclado Mecânico RGB|           2| 450.0|    120|
+|       106|Monitor Ultrawide 34|           2|6200.0|     25|
++----------+--------------------+------------+------+-------+
 </code></pre>
 <h3 id="3-delete-exclusao-fisica-de-registro">3. DELETE: Exclusão Física de Registro</h3>
 <pre><code class="language-python">spark.sql(&quot;&quot;&quot;
@@ -627,12 +627,12 @@ print(&quot;--- DEPOIS DO DELETE (Produto 105 removido) ---&quot;)
 spark.sql(&quot;SELECT * FROM local.db.produtos ORDER BY id_produto&quot;).show()
 </code></pre>
 <p>Resultado esperado:</p>
-<pre><code>+----------+--------------------+------------+-------+-------+
-|id_produto|                nome|id_categoria|  preco|estoque|
-+----------+--------------------+------------+-------+-------+
-|       104|      Smartwatch Pro|           1| 1500.0|     50|
-|       106|Monitor Ultrawide 34|           2| 6200.0|     25|
-+----------+--------------------+------------+-------+-------+
+<pre><code>+----------+--------------------+------------+------+-------+
+|id_produto|                nome|id_categoria| preco|estoque|
++----------+--------------------+------------+------+-------+
+|       104|      Smartwatch Pro|           1|1500.0|     50|
+|       106|Monitor Ultrawide 34|           2|6200.0|     25|
++----------+--------------------+------------+------+-------+
 </code></pre>
 <h3 id="4-merge-upsert-sincronizacao-atomica">4. MERGE (UPSERT): Sincronização Atômica</h3>
 <pre><code class="language-python">spark.sql(&quot;&quot;&quot;
@@ -659,13 +659,13 @@ print(&quot;--- DEPOIS DO MERGE (Sincronização Final Concluída) ---&quot;)
 spark.sql(&quot;SELECT * FROM local.db.produtos ORDER BY id_produto&quot;).show()
 </code></pre>
 <p>Resultado esperado:</p>
-<pre><code>+----------+--------------------+------------+-------+-------+
-|id_produto|                nome|id_categoria|  preco|estoque|
-+----------+--------------------+------------+-------+-------+
-|       104|   Smartwatch Pro V2|           1| 1650.0|     80|
-|       106|Monitor Ultrawide 34|           2| 6200.0|     25|
-|       107|       Mouse Sem Fio|           2|  180.0|    200|
-+----------+--------------------+------------+-------+-------+
+<pre><code>+----------+--------------------+------------+------+-------+
+|id_produto|                nome|id_categoria| preco|estoque|
++----------+--------------------+------------+------+-------+
+|       104|   Smartwatch Pro V2|           1|1650.0|     80|
+|       106|Monitor Ultrawide...|           2|6200.0|     25|
+|       107|       Mouse Sem Fio|           2| 180.0|    200|
++----------+--------------------+------------+------+-------+
 </code></pre>
 
 
