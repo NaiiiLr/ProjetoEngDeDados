@@ -1,0 +1,61 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "a81227e1-4a58-4577-868e-2ee9b321d215",
+  "location" : "/home/ian/trabalho_arquitetura_dados/warehouse-apache-iceberg/db/itens_venda",
+  "last-sequence-number" : 0,
+  "last-updated-ms" : 1777327531637,
+  "last-column-id" : 5,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id_item",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "id_venda",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 3,
+      "name" : "id_produto",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 4,
+      "name" : "quantidade",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 5,
+      "name" : "preco_unitario",
+      "required" : false,
+      "type" : "double"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "ian",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : -1,
+  "refs" : { },
+  "snapshots" : [ ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ ],
+  "metadata-log" : [ ]
+}

@@ -1,0 +1,92 @@
+{
+  "format-version" : 2,
+  "table-uuid" : "a4f633c1-f5ff-4ae6-9964-ff24af8db339",
+  "location" : "/home/ian/trabalho_arquitetura_dados/warehouse-apache-iceberg/db/produtos",
+  "last-sequence-number" : 1,
+  "last-updated-ms" : 1777327539571,
+  "last-column-id" : 5,
+  "current-schema-id" : 0,
+  "schemas" : [ {
+    "type" : "struct",
+    "schema-id" : 0,
+    "fields" : [ {
+      "id" : 1,
+      "name" : "id_produto",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 2,
+      "name" : "nome",
+      "required" : false,
+      "type" : "string"
+    }, {
+      "id" : 3,
+      "name" : "id_categoria",
+      "required" : false,
+      "type" : "int"
+    }, {
+      "id" : 4,
+      "name" : "preco",
+      "required" : false,
+      "type" : "double"
+    }, {
+      "id" : 5,
+      "name" : "estoque",
+      "required" : false,
+      "type" : "int"
+    } ]
+  } ],
+  "default-spec-id" : 0,
+  "partition-specs" : [ {
+    "spec-id" : 0,
+    "fields" : [ ]
+  } ],
+  "last-partition-id" : 999,
+  "default-sort-order-id" : 0,
+  "sort-orders" : [ {
+    "order-id" : 0,
+    "fields" : [ ]
+  } ],
+  "properties" : {
+    "owner" : "ian",
+    "write.parquet.compression-codec" : "zstd"
+  },
+  "current-snapshot-id" : 441143422067052925,
+  "refs" : {
+    "main" : {
+      "snapshot-id" : 441143422067052925,
+      "type" : "branch"
+    }
+  },
+  "snapshots" : [ {
+    "sequence-number" : 1,
+    "snapshot-id" : 441143422067052925,
+    "timestamp-ms" : 1777327539571,
+    "summary" : {
+      "operation" : "append",
+      "spark.app.id" : "local-1777327526094",
+      "added-data-files" : "3",
+      "added-records" : "3",
+      "added-files-size" : "4373",
+      "changed-partition-count" : "1",
+      "total-records" : "3",
+      "total-files-size" : "4373",
+      "total-data-files" : "3",
+      "total-delete-files" : "0",
+      "total-position-deletes" : "0",
+      "total-equality-deletes" : "0"
+    },
+    "manifest-list" : "/home/ian/trabalho_arquitetura_dados/warehouse-apache-iceberg/db/produtos/metadata/snap-441143422067052925-1-240d1493-adfd-4d93-94d7-71e3e1f00319.avro",
+    "schema-id" : 0
+  } ],
+  "statistics" : [ ],
+  "partition-statistics" : [ ],
+  "snapshot-log" : [ {
+    "timestamp-ms" : 1777327539571,
+    "snapshot-id" : 441143422067052925
+  } ],
+  "metadata-log" : [ {
+    "timestamp-ms" : 1777327530825,
+    "metadata-file" : "/home/ian/trabalho_arquitetura_dados/warehouse-apache-iceberg/db/produtos/metadata/v1.metadata.json"
+  } ]
+}

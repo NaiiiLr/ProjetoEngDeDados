@@ -1,0 +1,9 @@
+site_name: Projeto Arquitetura de Dados
+theme:
+  name: material
+
+nav:
+  - 'Contextualização': index.md
+  - 'Apache Spark': spark.md
+  - 'Apache Iceberg': iceberg.md
+  - 'Delta Lake': delta.md
