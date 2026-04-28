@@ -58,7 +58,7 @@ Versão Linux:
 ### 1. Clonar o Repositório
 
 ```bash
-git clone [https://github.com/NaiiiLr/ProjetoEngDeDados.git](https://github.com/NaiiiLr/ProjetoEngDeDados.git)
+git clone https://github.com/NaiiiLr/ProjetoEngDeDados.git
 
 cd ProjetoEngDeDados
 ```
@@ -74,3 +74,23 @@ uv sync
 # Ativa o ambiente virtual
 source .venv/bin/activate
 ```
+
+### 3. Executar os Laboratórios (Jupyter Lab)
+
+Com o ambiente ativado e as dependências instaladas, inicie a instância do Jupyter Lab para acessar e executar os testes interativos de comparação:
+
+```bash
+uv run jupyter lab
+```
+
+Após rodar o comando, o terminal exibirá uma URL (`ex: http://localhost:8888/lab?token=...`). Lá, você poderá abrir e executar as células dos arquivos `delta_lake.ipynb` e `apache_iceberg.ipynb`.
+
+### 4. Executar a Documentação Localmente (MkDocs)
+
+Toda a documentação técnica foi construída utilizando MkDocs. Se desejar rodar o site de documentação localmente na sua máquina, utilize o comando:
+
+```bash
+uv run mkdocs serve
+```
+
+Em seguida, acesse `http://localhost:8000` no seu navegador para explorar a arquitetura, diagramas e detalhes conceituais do projeto.
