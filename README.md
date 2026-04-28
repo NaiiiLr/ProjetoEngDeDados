@@ -51,6 +51,10 @@ Para garantir a reprodutibilidade do ambiente, o projeto foi desenvolvido e test
 * **Ambiente Linux / WSL (Ubuntu):** O projeto foi executado e validado em ambiente Ubuntu (POSIX) para garantir compatibilidade e evitar problemas nativos de gerenciamento de arquivos do Windows com o ecossistema Spark.
 * **Dependências:** O projeto utiliza a arquitetura moderna do Python com [**`pyproject.toml`**](./pyproject.toml) e *uv.lock* para garantir versões exatas (Spark 3.5.x) e reprodutibilidade 100% fiel.
 
+Versão Linux:
+
+![Versão do Linux - Linux Ubuntu 24.04](/assets/linux.png)
+
 ### 1. Clonar o Repositório
 
 ```bash
