@@ -1690,6 +1690,11 @@ dependencies = [
     { name = "pyspark" },
 ]
 
+[package.dev-dependencies]
+dev = [
+    { name = "jupyterlab" },
+]
+
 [package.metadata]
 requires-dist = [
     { name = "delta-spark", specifier = ">=3.1.0,<3.3.0" },
@@ -1698,6 +1703,9 @@ requires-dist = [
     { name = "mkdocs-material", specifier = ">=9.0.0" },
     { name = "pyspark", specifier = ">=3.5.0,<3.6.0" },
 ]
+
+[package.metadata.requires-dev]
+dev = [{ name = "jupyterlab", specifier = ">=4.5.6" }]
 
 [[package]]
 name = "traitlets"
