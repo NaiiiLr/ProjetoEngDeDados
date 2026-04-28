@@ -53,7 +53,7 @@ Para garantir a reprodutibilidade do ambiente, o projeto foi desenvolvido e test
 
 Versão Linux:
 
-![Versão do Linux - Linux Ubuntu 24.04](/assets/linux.png)
+![Versão do Linux - Linux Ubuntu 24.04](/docs/assets/linux.png)
 
 ### 1. Clonar o Repositório
 
